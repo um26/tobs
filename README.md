@@ -1,4 +1,4 @@
-# tobs
+# TOBS
 
 A repository for **Topology Optimization of Binary Structures (TOBS)**.
 
