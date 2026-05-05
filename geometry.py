@@ -3,11 +3,11 @@ from netgen.geom2d import SplineGeometry
 
 def transformer(n_coil : int = 2,
                 # dimensions
-                width_box : float = 0.6,
-                height_box : float = 0.6,
-                inner_diameter_coil : float = 4e-2,
-                outer_diameter_coil : float = 6e-2,
-                height_coil : float = 4e-2,
+                width_box : float = 8,
+                height_box : float = 8,
+                inner_diameter_coil : float = 1,
+                outer_diameter_coil : float = 2,
+                height_coil : float = 4,
                 # labels
                 primary_plus : str = "Pp",
                 primary_minus : str = "Pm",
@@ -20,9 +20,9 @@ def transformer(n_coil : int = 2,
                 bc_coil_secondary_plus : str = "dSp",
                 bc_coil_secondary_minus : str = "dSm",
                 # mesh
-                maxh : float = 1e-2,
-                maxh_coil : float = 1e-2,
-                maxh_design : float = 1e-2
+                maxh : float = 0.5,
+                maxh_coil : float = 0.5,
+                maxh_design : float = 0.5
                 ) -> Mesh:
     """ Generates the mesh of the transformer geometry """
 
